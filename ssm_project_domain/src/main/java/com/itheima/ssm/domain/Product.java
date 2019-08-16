@@ -2,6 +2,7 @@ package com.itheima.ssm.domain;
 
 
 import com.itheima.ssm.utis.DateUtis;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -10,6 +11,7 @@ public class Product {
     private String productNum;//订单编号
     private String productName;//订单名称
     private String cityName;//城市名称
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date DepartureTime;//出发时间
     private String DepartureTimeStr;
     private Integer productPrice;//产品价格
