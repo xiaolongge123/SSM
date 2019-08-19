@@ -1,7 +1,5 @@
 package com.itheima.ssm.controller;
 
-import com.github.pagehelper.Page;
-import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.itheima.ssm.domain.Orders;
 import com.itheima.ssm.service.OrdersService;
@@ -32,10 +30,10 @@ public class OrdersController {
     }
     //查询详情
     @RequestMapping("findById")
-    public ModelAndView findOne(int id){
+    public ModelAndView findOne(String id) throws Exception {
         ModelAndView mv = new ModelAndView ();
         Orders order =ordersService.findOne(id);
-        mv.addObject ("OneOrder",order);
+        mv.addObject ("orders",order);
         mv.setViewName ("orders-show");
         return mv;
     }

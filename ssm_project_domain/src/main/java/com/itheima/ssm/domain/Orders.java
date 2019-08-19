@@ -3,6 +3,7 @@ package com.itheima.ssm.domain;
 import com.itheima.ssm.utis.DateUtis;
 
 import java.util.Date;
+import java.util.List;
 
 public class Orders {
 
@@ -19,6 +20,24 @@ public class Orders {
     private String productId;// 产品id 外键
     private String memberId;// 会员(联系人）id 外键
     private Product product;//订单信息
+    private List<Traveller> travellers;
+    private Member member;
+
+    public List<Traveller> getTravellers() {
+        return travellers;
+    }
+
+    public void setTravellers(List<Traveller> travellers) {
+        this.travellers = travellers;
+    }
+
+    public Member getMember() {
+        return member;
+    }
+
+    public void setMember(Member member) {
+        this.member = member;
+    }
 
     public String getOrderTimeStr() {
         if (orderTime!=null){

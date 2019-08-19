@@ -26,7 +26,7 @@ public class OrdersServiceImpl implements OrdersService {
 
     //查询详情
     @Override
-    public Orders findOne(int id) {
+    public Orders findOne(String id) throws Exception {
         return ordersMapper.findOne (id);
     }
 }

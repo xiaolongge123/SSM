@@ -7,5 +7,5 @@ import java.util.List;
 public interface OrdersService {
     List<Orders> findOrders(int page , int size) throws Exception;
 
-    Orders findOne(int id);
+    Orders findOne(String id) throws Exception;
 }

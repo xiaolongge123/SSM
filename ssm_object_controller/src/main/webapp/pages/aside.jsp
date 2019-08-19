@@ -32,19 +32,19 @@
 			</a>
 				<ul class="treeview-menu">
 
-					<li id="system-setting"><a>
+					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/user/findAll"> <i
 							class="fa fa-circle-o"></i> 用户管理
 					</a></li>
-					<li id="system-setting"><a>
+					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/role/findAll"> <i
 							class="fa fa-circle-o"></i> 角色管理
 					</a></li>
-					<li id="system-setting"><a>
+					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/permission/findAll">
 							<i class="fa fa-circle-o"></i> 资源权限管理
 					</a></li>
-					<li id="system-setting"><a>
+					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/sysLog/findAll"> <i
 							class="fa fa-circle-o"></i> 访问日志
 					</a></li>
